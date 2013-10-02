@@ -18,6 +18,8 @@ void test_empty_list(void) {
   int b[] = { };
   mergesort(0, b);
   assert_true(arrays_match(0, a, b));
+	free(a);
+	free(b);
 }
 
 void test_singleton_list(void) {
